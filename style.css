@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    padding:15px 40px;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+.logo{
+    color:white;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+}
+
+.navbar ul li{
+    margin-left:30px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.navbar ul li a:hover{
+    color:orange;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.content{
+    color:white;
+}
+
+.content h1{
+    font-size:60px;
+}
+
+.content p{
+    font-size:24px;
+    margin:20px 0;
+}
+
+.btn1,
+.btn2{
+    padding:15px 30px;
+    font-size:18px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.btn1{
+    background:orange;
+    color:white;
+    border:none;
+}
+
+.btn2{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+/* About */
+.about{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:15px;
+}
+
+/* Contact */
+.contact{
+    padding:80px 20px;
+    text-align:center;
+    background:#f2f2f2;
+}
+
+.contact input,
+.contact textarea{
+    width:300px;
+    padding:10px;
+    margin:10px;
+}
+
+.contact button{
+    padding:12px 25px;
+    background:orange;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar ul li{
+        margin:10px 0;
+    }
+
+    .content h1{
+        font-size:35px;
+    }
+
+    .content p{
+        font-size:18px;
+    }
+
+    .contact input,
+    .contact textarea{
+        width:90%;
+    }
+
+    .btn1,
+    .btn2{
+        width:90%;
+    }
+}
